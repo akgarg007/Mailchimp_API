@@ -1,6 +1,8 @@
 <?php defined('BASEPATH') OR exit('No direct script access allowed');
 class Welcome extends MY_Controller {
 
+// In this Controller, I am extending it with my own MY_Controller and Model.
+
 var $apiKey;
 var $listId;
 var $dataCenter;
@@ -9,6 +11,8 @@ var $dataCenter;
         parent::__construct();
         $this->load->model('global_model'); 
 
+
+        // Enter your API KEY and list idfrom mail chimp
         $this->apiKey = '';    
         $this->listId = '';    
         $this->dataCenter =  substr($this->apiKey,strpos($this->apiKey,'-')+1);   
