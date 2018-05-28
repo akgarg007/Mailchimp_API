@@ -9,8 +9,8 @@ var $dataCenter;
         parent::__construct();
         $this->load->model('global_model'); 
 
-        $this->apiKey = 'a6d89dfa40f65bd0a1ca41673cfe6a2e-us11';    
-        $this->listId = '76c07cc268';    
+        $this->apiKey = '';    
+        $this->listId = '';    
         $this->dataCenter =  substr($this->apiKey,strpos($this->apiKey,'-')+1);   
     }
 
